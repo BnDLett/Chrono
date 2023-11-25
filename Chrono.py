@@ -28,15 +28,6 @@ class Hour(Chrono):
         value (int | float): The number of hours.
     """
 
-    def __init__(self, value: int | float):
-        """
-        Constructs an `Hour` object with the given value.
-
-        Args:
-            value (int | float): The number of hours.
-        """
-        super().__init__(value)
-
     def to_minutes(self):
         """
         Converts the `Hour` object to a `Minute` object.
@@ -57,20 +48,11 @@ class Hour(Chrono):
 @override
 class Minute(Chrono):
     """
-    Represents a unit of time equal to 60 seconds.
+    Represents a minute.
 
     Attributes:
         value (int | float): The number of minutes.
     """
-
-    def __init__(self, value: int | float):
-        """
-        Constructs a `Minute` object with the given value.
-
-        Args:
-            value (int | float): The number of minutes.
-        """
-        super().__init__(value)
 
     def to_hours(self):
         """
@@ -92,20 +74,11 @@ class Minute(Chrono):
 @override
 class Second(Chrono):
     """
-    Represents a unit of time equal to 1/60th of a minute.
+    Represents a second.
 
     Attributes:
         value (int | float): The number of seconds.
     """
-
-    def __init__(self, value: int | float):
-        """
-        Constructs a `Second` object with the given value.
-
-        Args:
-            value (int | float): The number of seconds.
-        """
-        super().__init__(value)
 
     def to_minutes(self):
         """
